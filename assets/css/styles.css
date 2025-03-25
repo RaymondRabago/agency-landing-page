@@ -1,0 +1,167 @@
+/* ALL PAGES */
+/* Minus 0.02 to the max-width/desktop breakpoints is based on: 
+https://getbootstrap.com/docs/5.0/layout/breakpoints/
+*/
+/* Mixin for min-width breakpoints */
+/* Mixin for max-width breakpoints */
+/* Mixin for min-width and max-width breakpoints */
+/* Mixin for adding style not in firefox browser */
+/* Mixin for adding style in firefox browser */
+/* Mixin for font-face */
+/* Mixin for overlay */
+/* Mixin for ellipsis with line clamp */
+/* Container */
+/* Breakpoints */
+/* Font - Familys */
+/* Font - Usages */
+/* Colors - Primary */
+/* Colors - Neutral */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default margin and padding and outline */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  outline: 2px dashed transparent;
+  outline-offset: 3px;
+}
+*:focus-visible {
+  outline-color: hsl(0, 0%, 25.5%);
+}
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-size: 18px;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* Make buttons and links have pointer cursor */
+a, button {
+  cursor: pointer;
+}
+
+/* Remove default text decoration on links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Make sure tables have borders by default */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remove mouse interactions for svg */
+svg {
+  pointer-events: none;
+  vertical-align: middle;
+}
+
+/* Remove the resize handle on textareas */
+textarea {
+  resize: none;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* CUSTOM: Add default body background color */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* CUSTOM: Add scroll margin top */
+* {
+  scroll-margin-top: 0;
+}
+
+/* BASE */
+/* Default font styles for the body */
+body {
+  font-family: "Barlow", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+/* Default font styles for the headings */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.font-heading {
+  font-family: "Fraunces", Arial, serif;
+  line-height: 1.2;
+}
+
+@media (max-width: 499.98px) {
+  h1, .h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 500px) {
+  h1, .h1 {
+    font-size: 3.4375rem;
+  }
+}
+/* Hide element */
+.hide {
+  display: none;
+}
+
+/* Hide elements visually but keep them accessible to screen readers */
+.sr-hide-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Text alignment */
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* COMPONENTS */
+/* LAYOUT */
